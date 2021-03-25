@@ -25,6 +25,8 @@ choco install jenkins
 
 ### Schtasks
 
+Refer to the doc: https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks
+
 **A scheduled task runs every 20 mins by using schetasks**
 ```
 schtasks /create /sc minute /mo 20 /tn "NewFRScraper" /tr "C:\python_apps\afr-scraper\afr_new_article_scrape.bat"
